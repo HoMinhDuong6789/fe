@@ -1,31 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { FeatureData } from "./FeatureData";
+import Toggle from "./state/Toggle";
 
 
 function App() {
-  const name = "Ahihi";
-  function computeFullName(firstName, lastName) {
-    return `${firstName} ${lastName}`;
-  }
 
-  // const FeatureData = [
-  //   {
-  //     image:
-  //       "https://i.pinimg.com/550x/a7/87/20/a78720c39a39ac50a2856420d636d113.jpg",
-  //     title: "Honda",
-  //   },
-  //   {
-  //     image:
-  //       "https://i.pinimg.com/550x/a7/87/20/a78720c39a39ac50a2856420d636d113.jpg",
-  //     title: "Mec",
-  //   },
-  //   {
-  //     image:
-  //       "https://i.pinimg.com/550x/a7/87/20/a78720c39a39ac50a2856420d636d113.jpg",
-  //     title: "Posche",
-  //   },
-  // ];
 
   function Feature(props) {
     console.log(props);
@@ -53,11 +33,15 @@ function App() {
   }
 
   return (
-    <div className="feature-list">
-      {FeatureData.map((item) => {
-        return <Feature image={item.image} title={item.title}></Feature>;
-      })}
-      ;
+    // <div className="feature-list">
+    //   {FeatureData.map((item) => {
+    //     return <Feature image={item.image} title={item.title}></Feature>;
+    //   })}
+    //   ;
+    // </div>
+
+    <div>
+      <Toggle></Toggle>
     </div>
   );
 }
