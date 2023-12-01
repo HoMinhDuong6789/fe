@@ -1,7 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { FeatureData } from "./FeatureData";
-import Toggle from "./state/Toggle";
+import Toggle from "./toggle/Toggle";
+import Counter from "./counter/Counter";
+import Game from "./tictactoe/Game";
 
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
 
     <div>
       <Toggle></Toggle>
+      <Counter></Counter>
+      <Game></Game>
     </div>
   );
 }
