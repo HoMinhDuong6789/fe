@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-top: 9px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.box1 {
+    background-color: aqua;
+}
+.box2 {
+    background-color: violet;
+}
+.box3 {
+    background-color: coral;
+    padding: 5px; 
+
+    border-width: 2px;
+    border-style: dashed;
+
+    box-sizing: content-box;
+    /* top 
+    padding: 10px 10px;
+    top-bottom right-left
+    
+    padding: 10px 10px 10px
+    top right-left bottom 
+
+    padding: 10px 10px 10px 10px
+    top right bottom left
+    
+    */
+    
+
+}
+.box3:hover {
+        background-color: aquamarine;
+}
+
+/* start position */
+.main-container {
+    background-color: rgb(220, 236, 196);
+    width: 400px;
+    height: 2000px;
+    display: flex;
+}
+
+.item1 {
+    margin: 5px;
+    position: absolute;
+    top: 300px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(202, 148, 77);
+}
+
+.item2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(211, 133, 31);
+    margin: 5px;
+}
+
+.item3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(243, 140, 6);
+    margin: 5px;
+}
+
+.item4 {
+    /* right: 0; */
+    width: 100px;
+    height: 100px;
+    background-color: rgb(224, 147, 116);
+    margin: 5px;
+    position: fixed;
+}
+
+
+/* end position */
