@@ -1,0 +1,81 @@
+/* common */
+.clear {
+    clear: both;
+}
+
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+#main {
+
+}
+
+/* start header */
+#header {
+    height: 46px;
+    background-color: black;
+
+}
+
+#header #nav {
+    color: white;
+    text-decoration: none;
+}
+
+#nav li {
+    display: inline-block;
+
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav li:hover a {
+    color: #000;
+    background-color: #cccc;
+}
+
+#nav .subnav {
+    display: none;
+}
+
+/* end header */
+
+/* --------------------------------- */
+
+/* start slider */
+
+
+/* end slider */
+
+
+/* ------------------------------------- */
+/* start content */
+
+
+/* end content */
+
+
+/* -------------------------------------- */
+
+/* start footer */
+
+
+
+/* end footer */
