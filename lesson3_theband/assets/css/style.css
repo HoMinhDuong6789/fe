@@ -24,7 +24,14 @@ html {
 #header {
     height: 46px;
     background-color: black;
+}
 
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
 }
 
 #header #nav {
@@ -33,34 +40,56 @@ html {
 }
 
 #nav li {
-    display: inline-block;
-
+    position: relative;
 }
 
-#nav li a {
+/* thẻ a phải chứa trong thẻ li, bên trong thẻ có id là nav 
+
+*/
+#nav > li > a {
     color: white;
-    text-decoration: none;
     text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
-    display: inline-block;
+    display: block;
 }
 
-#nav li:hover a {
+#nav > li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover {
     color: #000;
     background-color: #cccc;
 }
 
 #nav .subnav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5) ;
 }
 
+#nav .subnav a {
+    color: #030303;
+    padding: 0 12px;
+}
 /* end header */
 
 /* --------------------------------- */
 
 /* start slider */
-
+#slider {
+    min-height: 500px;
+    background-color: rgb(255, 255, 255);
+}
 
 /* end slider */
 
