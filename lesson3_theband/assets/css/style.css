@@ -13,10 +13,18 @@
 html {
     font-family: Helvetica, arial, sans-serif;
     scroll-behavior: smooth;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 
-#main {}
+#main {
+
+}
+
+.clear {
+    clear: both;
+}
 
 /* start header */
 #header {
@@ -175,6 +183,108 @@ html {
 }
 /* end content */
 
+/* start content item */
+.member-list {
+    text-align: justify;
+    padding: 32px 0;
+    background-color: rgb(236, 236, 163);
+    display: inline-flex;
+}
+
+.member-item {
+    float: left;
+    width: calc(100/3);
+    text-align: center;
+}
+
+.member-name {
+    text-align: center;
+    margin: 15px 0;
+    font-family: "Lato", sans-serif;
+}
+
+.member-img {
+    margin-bottom: 16px;
+    width: 60%;
+    border-radius: 4px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+/* end content item */
+
+/* start places */
+
+.places-list {
+    display: inline-flex;
+    background-color: #e08080;
+    margin: 12px -0px;
+    padding: 32px 8px ;
+    width: 100%;
+}
+.tickets-list {
+    background-color: #f5c8c8;
+}
+
+.tickets-list li {
+    font-size: 15px;
+    list-style-type: none;
+    padding: 4px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold-out {
+    background-color: #f44336;
+}
+
+.tickets-list .quantity {
+    width: 24px;
+    float: right;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center; 
+    line-height: 24px;
+}
+
+.place-item {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 32.3%;
+    margin: 0px 5px 16px;
+    height: 375px;
+}
+
+.place-body {
+    padding: 0px 8px;
+}
+
+
+.place-img {
+    width: -webkit-fill-available;
+    
+}
+
+.place-time,
+.place-desc {
+    margin: 15px 0px;
+}
+
+.s-full-width {
+    text-decoration-line: none;
+    background-color: #030303;
+    margin: 0px 0px 16px;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+.s-full-width:hover {
+    background-color: #c5baba;
+}
+
+
+/* end places */
 
 /* -------------------------------------- */
 
